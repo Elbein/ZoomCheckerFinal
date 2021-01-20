@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select a minimum window size</title>
+</head>
+<body>
+
+<form>
+    <select id = "mySelect" onchange = "myFunction()">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+</form>
+
+<button id = "sizeButton" onclick = "myFunction()">Save</button>
+
+<script src = popup.js>
+    function myFunction() {
+        let x = document.getElementById("mySelect");
+        let i = x.selectedIndex;
+        if (i === "Small")
+        {
+            window.resizeTo((screen.height / 3), (screen.width / 3));
+        }
+        else if(i === "Medium")
+        {
+            window.resizeTo((screen.height / 2), (screen.width / 2));
+        }
+        else if(i === "Large")
+        {
+            window.resizeTo(screen.height, screen.width);
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+
+<body>
+    <p>For hosts and participants: Select whether or not you wish to restrict your meeting window size. </p>
+    <input type = 'radio' id='acceptButton' name='yesOrNo' value = 'accept' >
+    <label>Yes</label><br>
+    <input type = 'radio' id='denyButton' name='yesOrNo' value = 'deny'>
+    <label>No</label><br>
+    <br>
+    <button id='sizeButton'>Set size</button>
+    <br>
+
+    <p>For host:  Set a question relating to the lecture, and a time for the question to be triggered.</p>
+    <label>Enter a question here:</label>
+    <div id = 'questionBlock' contenteditable='true'>how are you doing?</div>
+
+
+<br>
+    <br>
+    <label>Enter a trigger time here (military time):</label>
+    <div id = 'timeBlock' contenteditable = 'true'>14:30</div>
+    <br>
+
+    <button id = 'questionButton'>Set Question</button>
+
+    <script src='popup.js'>
+
+        // let questionInput = document.getElementById('questionBlock').innerHTML;
+        // let timeInput = document.getElementById('timeBlock').innerHTML;
+        //
+        // document.getElementById('setQuestion').addEventListener('click', questionAlert(questionInput, timeInput));
+        //
+        //
+        // function check()
+        // {
+        //     if(document.getElementById('accept').checked === true)
+        //     {
+        //         alert('accept')
+        //     }
+        //     else if(document.getElementById('deny').checked === true)
+        //     {
+        //         alert('deny')
+        //     }
+        // }
+
+        // function passToBackground() {
+        //     chrome.runtime.sendMessage({
+        //
+        //     })
+        // }
+
+    // function setSize(yesOrNo)
+    // {
+    //     //chrome.runtime.sendMessage({message: yesOrNo});
+    //     setWindowSize(yesOrNo);
+    //     // let q = document.getElementById('ques');
+    //     // let x = document.getElementById('myRadio').value;
+    // }
+    //
+    // function myFunction() {
+    //     let d = new Date();
+    //     let question = document.getElementbyId('questionBlock').innerHTML;
+    //     alert(question);
+    //     let q = d;
+    // }
+    </script>
+</body>
+</html>
